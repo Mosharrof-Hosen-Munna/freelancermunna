@@ -69,7 +69,7 @@ html{
 
 /* Menubar styling start */
 
-.menu-bar{
+.menu-bar,.menu-bar2{
     color: white;
     font-size: 23px;
     cursor: pointer;
@@ -131,7 +131,7 @@ html{
 }
 /* all similar styling code */
 .about .about-content ,
-.services .services-content, .skills .skills-content, .contact .contact-content{
+.services .services-content, .skills .skills-content, .contact .contact-content, .provide .provide-content{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -753,8 +753,20 @@ footer span a:hover{
     .home{
         background-image:url("../images/home2.jpg");
     }
+    .home .home-content .text-3{
+        font-size: 25px;
+    }
+    .home .home-content .text-1{
+        font-size: 20px;
+    }
     .home .home-content .text-2{
-        font-size: 42px;
+        font-size: 27px;
+    }
+    .about .about-content .right .text{
+        font-size: 18px;
+    }
+    .about .about-content .right p{
+        font-size: 12px;
     }
     .home-content a{
         padding: 8px 20px;
@@ -820,7 +832,7 @@ footer span a:hover{
         text-align: center;
     }
     .skills .skills-content .column{
-        width: calc(100% - 10px);
+        width: calc(100% - 0px);
     }
     .skills .skills-content .left .text{
         text-align: center;
@@ -855,3 +867,129 @@ footer span a:hover{
     }
 }
 
+
+
+
+/* this style for skills page */
+.about-skills .skills-slider{
+    margin-top: 13%;
+}
+.about-skills .skills-slider .text-1{
+    font-size: 43px;
+    color: white;
+    text-align:center;
+    margin-bottom: 20px;
+}
+.about-skills .skills-slider .text-2{
+    font-size: 35px;
+   color: crimson;
+    text-align:center;
+    margin-bottom: 10px;
+}
+.about-skills .skills-slider .text-3{
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.about-skills .skills-slider .button{
+    margin: auto;
+    display: block;
+    width: 200px;
+}
+.about-skills{
+    /* display: flex; */
+    background-image:url("../images/home.jpg");
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: white;
+    min-height: 500px;
+    font-family: 'Ubuntu',sans-serif;
+    /* float: 100%;
+    flex-wrap:initial; */
+
+}
+.about-skills a{
+    background: crimson;
+    color: white;
+    display: inline-block;
+    padding: 10px 40px;
+    font-size: 25px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 2px solid crimson;
+    transition: all .3s ease;
+    text-align: center;
+    /* width: 100%; */
+
+}
+.about-skills a:hover{
+    background: none;
+    color: crimson;
+}
+.about-skills .skills-slider .text-3 span{
+    color: crimson;
+    font-weight: 500;
+}
+.services.skills .title::before{
+    width: 260px;
+}
+.services.skills .title::after{
+        content: "Using skills";
+}
+
+.services .services-content.skills .card{
+    width: calc(50% - 10px);
+    height: 250px;
+}
+.services .services-content.skills .card .box{
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+/* resposive style for skills page */
+@media(max-width:576px){
+    .about-skills .skills-slider .text-1{
+        font-size: 37px;
+        color: white;
+        text-align:center;
+        margin-bottom: 20px;
+    }
+    .about-skills .skills-slider .text-2{
+        font-size: 26px;
+       color: crimson;
+        text-align:center;
+        margin-bottom: 10px;
+    }
+    .about-skills .skills-slider .text-3{
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .about-skills a{
+        padding: 10px 30px;
+    font-size: 18px;
+    width: 200px;
+    
+    }
+    .about-skills{
+       
+        background-image:url("../images/home2.jpg");
+    }
+    .services .services-content.skills .card{
+        width: calc(100% - 0px);
+        height: 250px;
+    }
+    .services.skills .title::before{
+        width: 230px;
+    }
+} 

@@ -11,6 +11,10 @@ $(document).ready(function(){
         $('.navbar .menu').toggleClass("active");
         
     })
+    $(".menu-bar2").click(function() {
+        $('.navbar2 .menu-skills').toggleClass("active");
+        
+    })
     $(window).scroll(function(){
         if(this.scrollY > 500){
             $('.scroll-up-btn').addClass('show')
@@ -21,19 +25,24 @@ $(document).ready(function(){
     $('.scroll-up-btn').click(function() {
         $("html").animate({scrollTop:0})
     });
+
+    $(".contact .right form .button").click(function() {
+        alert("We are not allow any messsage from this site")
+    })
     var typed = new Typed('.typing', {
         strings: ["Freelancer","Developer","Youtuber","Designer","Blogger"],
         typeSpeed:100,
         backSpeed:60,
         loop: true
       });
-      var typed = new Typed('.typing2', {
+      
+    var typed = new Typed('.typing2', {
         strings: ["Freelancer","Developer","Youtuber","Designer","Blogger"],
         typeSpeed:100,
         backSpeed:60,
         loop:true
       });
-      
+
     
     // carousel sript start
     $(".carousel").owlCarousel({
@@ -57,8 +66,12 @@ $(document).ready(function(){
         }
 
     });
-// typing animation script
+
+// skills page script
     
+// typing script
+
+
    
    
 
